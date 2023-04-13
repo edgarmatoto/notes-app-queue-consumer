@@ -23,7 +23,7 @@ class PlaylistSongsService {
       values: [playlistId],
     });
 
-    return { ...this.getPlaylistById(playlistId), songs: result.rows };
+    return result.rows;
   }
 }
 
